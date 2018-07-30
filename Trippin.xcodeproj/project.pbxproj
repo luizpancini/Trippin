@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936A3778210E46F300B6209C /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3777210E46F300B6209C /* CityViewController.swift */; };
+		936A377A210E60A100B6209C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3779210E60A000B6209C /* City.swift */; };
+		936A3783210E692600B6209C /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3781210E692600B6209C /* CityTableViewCell.swift */; };
+		936A3784210E692600B6209C /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936A3782210E692600B6209C /* CityTableViewCell.xib */; };
 		93C9BEE5210BE8AA00B9DAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE4210BE8AA00B9DAD9 /* AppDelegate.swift */; };
-		93C9BEE7210BE8AA00B9DAD9 /* ExplorarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE6210BE8AA00B9DAD9 /* ExplorarViewController.swift */; };
-		93C9BEE9210BE8AA00B9DAD9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE8210BE8AA00B9DAD9 /* SecondViewController.swift */; };
+		93C9BEE7210BE8AA00B9DAD9 /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE6210BE8AA00B9DAD9 /* ExplorerViewController.swift */; };
 		93C9BEEC210BE8AA00B9DAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C9BEEA210BE8AA00B9DAD9 /* Main.storyboard */; };
 		93C9BEEE210BE8AD00B9DAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C9BEED210BE8AD00B9DAD9 /* Assets.xcassets */; };
 		93C9BEF1210BE8AD00B9DAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C9BEEF210BE8AD00B9DAD9 /* LaunchScreen.storyboard */; };
 		93E2264C210CE982005AFF85 /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E2264B210CE982005AFF85 /* StarterViewController.swift */; };
+		9E8CCEA6BCA7C9C2B56E1238 /* Pods_Trippin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC12A4956A62A7645B64C7A9 /* Pods_Trippin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		137F074E3F19BE36FE05773A /* Pods-Trippin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trippin/Pods-Trippin.debug.xcconfig"; sourceTree = "<group>"; };
+		936A3777210E46F300B6209C /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		936A3779210E60A000B6209C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		936A3781210E692600B6209C /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		936A3782210E692600B6209C /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		93C9BEE1210BE8AA00B9DAD9 /* Trippin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trippin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C9BEE4210BE8AA00B9DAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93C9BEE6210BE8AA00B9DAD9 /* ExplorarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorarViewController.swift; sourceTree = "<group>"; };
-		93C9BEE8210BE8AA00B9DAD9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		93C9BEE6210BE8AA00B9DAD9 /* ExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
 		93C9BEEB210BE8AA00B9DAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93C9BEED210BE8AD00B9DAD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C9BEF0210BE8AD00B9DAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C9BEF2210BE8AD00B9DAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E2264B210CE982005AFF85 /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
+		AC12A4956A62A7645B64C7A9 /* Pods_Trippin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trippin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDF3B02EA0E72B9FBFB5BBD /* Pods-Trippin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trippin/Pods-Trippin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8CCEA6BCA7C9C2B56E1238 /* Pods_Trippin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D2D6ADF45F89EB518D90D11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				137F074E3F19BE36FE05773A /* Pods-Trippin.debug.xcconfig */,
+				FEDF3B02EA0E72B9FBFB5BBD /* Pods-Trippin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		93C9BED8210BE8AA00B9DAD9 = {
 			isa = PBXGroup;
 			children = (
 				93C9BEE3210BE8AA00B9DAD9 /* Trippin */,
 				93C9BEE2210BE8AA00B9DAD9 /* Products */,
+				8D2D6ADF45F89EB518D90D11 /* Pods */,
+				B8C9AA6B9CE5B5511C7C3C31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +81,26 @@
 			isa = PBXGroup;
 			children = (
 				93C9BEE4210BE8AA00B9DAD9 /* AppDelegate.swift */,
-				93C9BEE6210BE8AA00B9DAD9 /* ExplorarViewController.swift */,
-				93C9BEE8210BE8AA00B9DAD9 /* SecondViewController.swift */,
 				93E2264B210CE982005AFF85 /* StarterViewController.swift */,
+				93C9BEE6210BE8AA00B9DAD9 /* ExplorerViewController.swift */,
+				936A3779210E60A000B6209C /* City.swift */,
+				936A3777210E46F300B6209C /* CityViewController.swift */,
 				93C9BEEA210BE8AA00B9DAD9 /* Main.storyboard */,
+				936A3781210E692600B6209C /* CityTableViewCell.swift */,
+				936A3782210E692600B6209C /* CityTableViewCell.xib */,
 				93C9BEED210BE8AD00B9DAD9 /* Assets.xcassets */,
 				93C9BEEF210BE8AD00B9DAD9 /* LaunchScreen.storyboard */,
 				93C9BEF2210BE8AD00B9DAD9 /* Info.plist */,
 			);
 			path = Trippin;
+			sourceTree = "<group>";
+		};
+		B8C9AA6B9CE5B5511C7C3C31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC12A4956A62A7645B64C7A9 /* Pods_Trippin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C9BEF5210BE8AD00B9DAD9 /* Build configuration list for PBXNativeTarget "Trippin" */;
 			buildPhases = (
+				84432DCBAE975761B0FE651E /* [CP] Check Pods Manifest.lock */,
 				93C9BEDD210BE8AA00B9DAD9 /* Sources */,
 				93C9BEDE210BE8AA00B9DAD9 /* Frameworks */,
 				93C9BEDF210BE8AA00B9DAD9 /* Resources */,
+				C818E0659CBF01B4E12FACC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,21 +165,67 @@
 			files = (
 				93C9BEF1210BE8AD00B9DAD9 /* LaunchScreen.storyboard in Resources */,
 				93C9BEEE210BE8AD00B9DAD9 /* Assets.xcassets in Resources */,
+				936A3784210E692600B6209C /* CityTableViewCell.xib in Resources */,
 				93C9BEEC210BE8AA00B9DAD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84432DCBAE975761B0FE651E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trippin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C818E0659CBF01B4E12FACC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trippin/Pods-Trippin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trippin/Pods-Trippin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93C9BEDD210BE8AA00B9DAD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C9BEE9210BE8AA00B9DAD9 /* SecondViewController.swift in Sources */,
 				93E2264C210CE982005AFF85 /* StarterViewController.swift in Sources */,
+				936A377A210E60A100B6209C /* City.swift in Sources */,
+				936A3783210E692600B6209C /* CityTableViewCell.swift in Sources */,
 				93C9BEE5210BE8AA00B9DAD9 /* AppDelegate.swift in Sources */,
-				93C9BEE7210BE8AA00B9DAD9 /* ExplorarViewController.swift in Sources */,
+				93C9BEE7210BE8AA00B9DAD9 /* ExplorerViewController.swift in Sources */,
+				936A3778210E46F300B6209C /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +367,7 @@
 		};
 		93C9BEF6210BE8AD00B9DAD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137F074E3F19BE36FE05773A /* Pods-Trippin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +386,7 @@
 		};
 		93C9BEF7210BE8AD00B9DAD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDF3B02EA0E72B9FBFB5BBD /* Pods-Trippin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
