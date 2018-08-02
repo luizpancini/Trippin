@@ -10,7 +10,7 @@ import UIKit
 
 class CityViewController: UIViewController {
     
-    let thisCity = City()
+    var thisCity = City()
     
     override func viewDidLoad() {
         

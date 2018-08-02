@@ -11,8 +11,7 @@ import ChameleonFramework
 
 class ExplorerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var citiesArray = Array<City>()
-    let AlfredoChaves = City()
+    var citiesArray : [City] = [City]()
     
     
     @IBOutlet weak var cityTableView: UITableView!
@@ -24,15 +23,7 @@ class ExplorerViewController: UIViewController, UITableViewDataSource, UITableVi
         cityTableView.dataSource = self
         cityTableView.separatorStyle = .none
         
-        //Register CityTableViewCell.xib file here:
-        //cityTableView.register(UINib(nibName: "ExplorerCell", bundle: nil), forCellReuseIdentifier: "CityCell")
-        
-        AlfredoChaves.mainPicture = "opener"
-        AlfredoChaves.Name = "Alfredo"
-        AlfredoChaves.quickDescription = "Melhores cachus"
-        citiesArray.append(AlfredoChaves)
-        print(AlfredoChaves)
-        
+        citiesArray = loadCities()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,22 +31,23 @@ class ExplorerViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ExplorerCell", for: indexPath)
-//        cell.cityName.text = citiesArray[indexPath.row].Name
-//        cell.cityDescriptionLabel.text = citiesArray[indexPath.row].quickDescription
-//        cell.cityPicture = UIImageView(image: UIImage(contentsOfFile: citiesArray[indexPath.row].mainPicture))
-        cell.textLabel?.text = citiesArray[indexPath.row].Name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExplorerCell", for: indexPath) as! CityTableViewCell
+        if let image = UIImage(named: citiesArray[indexPath.row].mainPicture) {
+            cell.nameLabel.text = citiesArray[indexPath.row].Name
+            cell.teaserLabel.text = citiesArray[indexPath.row].quickDescription
+            cell.mainPicture.image = image
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "goToCity", sender: citiesArray[indexPath.row].Name)
+        performSegue(withIdentifier: "goToCity", sender: citiesArray[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cvc = segue.destination as! CityViewController
-        cvc.thisCity.Name = sender as! String
+        cvc.thisCity = (sender as? City)!
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,4 +58,32 @@ class ExplorerViewController: UIViewController, UITableViewDataSource, UITableVi
 
 }
 
-
+//MARK: Cities data
+extension ExplorerViewController {
+    
+    func loadCities() -> [City]{
+        
+        var newArray = [City]()
+        
+        let AlfredoChaves = City()
+        AlfredoChaves.mainPicture = "alfredoChavesMainPic"
+        AlfredoChaves.Name = "Alfredo Chaves"
+        AlfredoChaves.quickDescription = "Aqui tem uma cachoeira melhor que a outra"
+        
+        let SantaTeresa = City()
+        SantaTeresa.mainPicture = "santaTeresaMainPic"
+        SantaTeresa.Name = "Santa Teresa"
+        SantaTeresa.quickDescription = "A doce terra dos colibris"
+        
+        let PedraAzul = City()
+        PedraAzul.mainPicture = "pedraAzulMainPic"
+        PedraAzul.Name = "Pedra Azul"
+        PedraAzul.quickDescription = "A queridinha, internacional, romantica"
+        
+        newArray.append(AlfredoChaves)
+        newArray.append(SantaTeresa)
+        newArray.append(PedraAzul)
+        
+        return newArray
+    }
+}

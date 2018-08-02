@@ -8,7 +8,7 @@
 import Foundation
 
 class City {
-    var Name: String = ""
+    var Name: String?
     var mainPicture: String = ""
     var quickDescription: String = ""
 }

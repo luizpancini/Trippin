@@ -10,7 +10,6 @@
 		936A3778210E46F300B6209C /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3777210E46F300B6209C /* CityViewController.swift */; };
 		936A377A210E60A100B6209C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3779210E60A000B6209C /* City.swift */; };
 		936A3783210E692600B6209C /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3781210E692600B6209C /* CityTableViewCell.swift */; };
-		936A3784210E692600B6209C /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936A3782210E692600B6209C /* CityTableViewCell.xib */; };
 		93C9BEE5210BE8AA00B9DAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE4210BE8AA00B9DAD9 /* AppDelegate.swift */; };
 		93C9BEE7210BE8AA00B9DAD9 /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9BEE6210BE8AA00B9DAD9 /* ExplorerViewController.swift */; };
 		93C9BEEC210BE8AA00B9DAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C9BEEA210BE8AA00B9DAD9 /* Main.storyboard */; };
@@ -25,7 +24,6 @@
 		936A3777210E46F300B6209C /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		936A3779210E60A000B6209C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		936A3781210E692600B6209C /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
-		936A3782210E692600B6209C /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		93C9BEE1210BE8AA00B9DAD9 /* Trippin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trippin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C9BEE4210BE8AA00B9DAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C9BEE6210BE8AA00B9DAD9 /* ExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				936A3777210E46F300B6209C /* CityViewController.swift */,
 				93C9BEEA210BE8AA00B9DAD9 /* Main.storyboard */,
 				936A3781210E692600B6209C /* CityTableViewCell.swift */,
-				936A3782210E692600B6209C /* CityTableViewCell.xib */,
 				93C9BEED210BE8AD00B9DAD9 /* Assets.xcassets */,
 				93C9BEEF210BE8AD00B9DAD9 /* LaunchScreen.storyboard */,
 				93C9BEF2210BE8AD00B9DAD9 /* Info.plist */,
@@ -165,7 +162,6 @@
 			files = (
 				93C9BEF1210BE8AD00B9DAD9 /* LaunchScreen.storyboard in Resources */,
 				93C9BEEE210BE8AD00B9DAD9 /* Assets.xcassets in Resources */,
-				936A3784210E692600B6209C /* CityTableViewCell.xib in Resources */,
 				93C9BEEC210BE8AA00B9DAD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
