@@ -8,41 +8,67 @@
 
 import UIKit
 import ChameleonFramework
+import Foundation
 
-class ExplorerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ExplorerViewController: UITableViewController {
     
     var citiesArray : [City] = [City]()
+    var filteredCitiesArray : [City] = [City]()
+    let searchController = UISearchController(searchResultsController: nil)
     
+    @IBOutlet var cityTableView: UITableView!
+    @IBOutlet weak var topLabel: UILabel!
     
-    @IBOutlet weak var cityTableView: UITableView!
-    
+//MARK: Loaded view methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         cityTableView.delegate = self
         cityTableView.dataSource = self
-        cityTableView.separatorStyle = .none
         
+        
+        setupSearchBar()
+        setupNavBar()
+        setupTopLabel()
         citiesArray = loadCities()
+        
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return citiesArray.count
+    //MARK: TableView Datasource methods
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredCitiesArray.count
+        }
+           return citiesArray.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExplorerCell", for: indexPath) as! CityTableViewCell
-        if let image = UIImage(named: citiesArray[indexPath.row].mainPicture) {
-            cell.nameLabel.text = citiesArray[indexPath.row].Name
-            cell.teaserLabel.text = citiesArray[indexPath.row].quickDescription
-            cell.mainPicture.image = image
+        let city: City
+        if searchController.isActive && searchController.searchBar.text != "" {
+            city = filteredCitiesArray[indexPath.row]
+        } else {
+            city = citiesArray[indexPath.row]
         }
+        if let image = UIImage(named: city.mainPicture) {
+                cell.nameLabel.text = city.Name
+                cell.teaserLabel.text = city.quickDescription
+                cell.mainPicture.image = image
+            }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //MARK: TableView Delegate methods
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "goToCity", sender: citiesArray[indexPath.row])
+        let city: City
+        if searchController.isActive && searchController.searchBar.text != "" {
+            city = filteredCitiesArray[indexPath.row]
+        } else {
+            city = citiesArray[indexPath.row]
+        }
+        performSegue(withIdentifier: "goToCity", sender: city)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,12 +76,48 @@ class ExplorerViewController: UIViewController, UITableViewDataSource, UITableVi
         cvc.thisCity = (sender as? City)!
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    //MARK: Navigation bar methods
+    
+    func setupNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.title = "Trippin`"
         navigationController?.navigationBar.barTintColor = UIColor.flatWhite()
     }
     
+    //MARK: UI methods
+    
+    func setupTopLabel() {
+        topLabel.text = "Lugares que a gente ama"
+        topLabel.textColor = UIColor.black
+        topLabel.font = UIFont(name: "Helvetica-Bold", size: 30.0)
+    }
+    
+    
+    
+    //MARK: Search bar methods
+    func filterContent (searchText: String, scope: String = "All") {
+        filteredCitiesArray = citiesArray.filter { city in
+            return city.Name?.lowercased().range(of: searchText.lowercased()) != nil
+        }
+        tableView.reloadData()
+    }
+    
+}
 
+//MARK: SearchBar methods
+extension ExplorerViewController: UISearchResultsUpdating {
+    
+    func setupSearchBar() {
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContent(searchText: searchController.searchBar.text!)
+    }
+    
 }
 
 //MARK: Cities data
@@ -83,6 +145,8 @@ extension ExplorerViewController {
         newArray.append(AlfredoChaves)
         newArray.append(SantaTeresa)
         newArray.append(PedraAzul)
+        
+        cityTableView.separatorStyle = .none
         
         return newArray
     }
