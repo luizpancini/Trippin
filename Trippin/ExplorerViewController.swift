@@ -28,8 +28,8 @@ class ExplorerViewController: UITableViewController {
         
         setupSearchBar()
         setupNavBar()
-        setupTopLabel()
-        citiesArray = loadCities()
+        setupTopLabel() 
+        citiesArray = loadCities().sorted(by: {$0.Name! < $1.Name!}) // Loads the City objects sorted alphabetically by their Name property
         
     }
     
@@ -128,26 +128,40 @@ extension ExplorerViewController {
         var newArray = [City]()
         
         let AlfredoChaves = City()
-        AlfredoChaves.mainPicture = "alfredoChavesMainPic"
+        AlfredoChaves.mainPicture = "alfredo-0"
         AlfredoChaves.Name = "Alfredo Chaves"
         AlfredoChaves.quickDescription = "Aqui tem uma cachoeira melhor que a outra"
+        AlfredoChaves.picturesCount = 6
+        AlfredoChaves.pictures = createPicsArray(name: "alfredo", total: AlfredoChaves.picturesCount)
         
         let SantaTeresa = City()
-        SantaTeresa.mainPicture = "santaTeresaMainPic"
+        SantaTeresa.mainPicture = "santaTeresa-0"
         SantaTeresa.Name = "Santa Teresa"
         SantaTeresa.quickDescription = "A doce terra dos colibris"
+        SantaTeresa.pictures = createPicsArray(name: "santaTeresa", total: SantaTeresa.picturesCount)
         
         let PedraAzul = City()
-        PedraAzul.mainPicture = "pedraAzulMainPic"
+        PedraAzul.mainPicture = "pedraAzul-0"
         PedraAzul.Name = "Pedra Azul"
         PedraAzul.quickDescription = "A queridinha, internacional, romantica"
+        PedraAzul.pictures = createPicsArray(name: "pedraAzul", total: PedraAzul.picturesCount)
         
-        newArray.append(AlfredoChaves)
         newArray.append(SantaTeresa)
+        newArray.append(AlfredoChaves)
         newArray.append(PedraAzul)
         
         cityTableView.separatorStyle = .none
         
         return newArray
+    }
+    
+    func createPicsArray(name: String, total: Int) -> [UIImage] {
+        var array: [UIImage] = []
+        for imageCount in 0..<total {
+            let imageName = "\(name)-\(imageCount)"
+            let image = UIImage(named: imageName)
+            array.append(image!)
+        }
+        return array
     }
 }

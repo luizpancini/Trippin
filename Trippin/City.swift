@@ -6,10 +6,12 @@
 //  Copyright © 2018 Luiz Santos. All rights reserved.
 //
 import Foundation
-import RealmSwift
+import UIKit
 
-class City : Object {
-    @objc dynamic var Name: String?
-    @objc dynamic var mainPicture: String = ""
-    @objc dynamic var quickDescription: String = ""
+class City {
+    var Name: String?
+    var mainPicture: String = ""
+    var quickDescription: String = ""
+    var pictures: [UIImage] = []
+    var picturesCount: Int = 1
 }
