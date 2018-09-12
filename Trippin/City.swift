@@ -12,6 +12,7 @@ class City {
     var Name: String?
     var mainPicture: String = ""
     var quickDescription: String = ""
+    var longDescription: String = ""
     var pictures: [UIImage] = []
     var picturesCount: Int = 1
 }
