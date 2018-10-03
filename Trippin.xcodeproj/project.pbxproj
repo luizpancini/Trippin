@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930F01D8216571BE0042F40F /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F01D7216571BE0042F40F /* AttractionsViewController.swift */; };
 		936A3778210E46F300B6209C /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3777210E46F300B6209C /* CityViewController.swift */; };
 		936A377A210E60A100B6209C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3779210E60A000B6209C /* City.swift */; };
 		936A3783210E692600B6209C /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A3781210E692600B6209C /* CityTableViewCell.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		137F074E3F19BE36FE05773A /* Pods-Trippin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trippin/Pods-Trippin.debug.xcconfig"; sourceTree = "<group>"; };
+		930F01D7216571BE0042F40F /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
 		936A3777210E46F300B6209C /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		936A3779210E60A000B6209C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		936A3781210E692600B6209C /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				936A3777210E46F300B6209C /* CityViewController.swift */,
 				936A3779210E60A000B6209C /* City.swift */,
 				936A3781210E692600B6209C /* CityTableViewCell.swift */,
+				930F01D7216571BE0042F40F /* AttractionsViewController.swift */,
 				93C9BEEA210BE8AA00B9DAD9 /* Main.storyboard */,
 				93C9BEED210BE8AD00B9DAD9 /* Assets.xcassets */,
 				93C9BEEF210BE8AD00B9DAD9 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E2264C210CE982005AFF85 /* StarterViewController.swift in Sources */,
+				930F01D8216571BE0042F40F /* AttractionsViewController.swift in Sources */,
 				936A377A210E60A100B6209C /* City.swift in Sources */,
 				936A3783210E692600B6209C /* CityTableViewCell.swift in Sources */,
 				93C9BEE5210BE8AA00B9DAD9 /* AppDelegate.swift in Sources */,

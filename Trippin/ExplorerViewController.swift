@@ -131,7 +131,7 @@ extension ExplorerViewController {
         AlfredoChaves.mainPicture = "alfredo-0"
         AlfredoChaves.Name = "Alfredo Chaves"
         AlfredoChaves.quickDescription = "Aqui tem uma cachoeira melhor que a outra"
-        AlfredoChaves.longDescription = "Alfredo Chaves é um pequena cidade da Região da Costa e da Imigração, com cerca de 15 mil habitantes, localizada à cerca de 90 km (1 hora  e meia de carro) de Vitória. Colonizado por portugueses e italianos, e emancipado como município em 1891, Alfredo (para os íntimos) é repleto de belezas naturais e  história. As localidades de Matilde e Carolina concentram boa parte dessas atrações, como a Estação Ferroviária de Matilde, o Túnel  Encantado, e muitas cachoeiras, como de Matilde, de Iracema e Iraceminha, Daróz, Vovó Lúcia e Tia Hélida. A tradição cultural fica por conta da Festa da Banana e do Leite."
+        AlfredoChaves.longDescription = "Alfredo Chaves é uma cidade da Região da Costa e da Imigração, com cerca de 15 mil habitantes, localizada à 90 km (1 hora  e meia de carro) de Vitória. Colonizada por portugueses e italianos, e emancipada em 1891, Alfredo Chaves é repleta de belezas naturais e  história. As localidades de Matilde e Carolina concentram boa parte dessas atrações, como a Estação Ferroviária de Matilde, o Túnel  Encantado, e muitas cachoeiras, como de Matilde, de Iracema e Iraceminha, Daróz, Vovó Lúcia e Tia Hélida. A tradição cultural fica por conta da Festa da Banana e do Leite."
         AlfredoChaves.picturesCount = 6
         AlfredoChaves.pictures = createPicsArray(name: "alfredo", total: AlfredoChaves.picturesCount)
         

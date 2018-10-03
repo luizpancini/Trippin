@@ -15,4 +15,16 @@ class City {
     var longDescription: String = ""
     var pictures: [UIImage] = []
     var picturesCount: Int = 1
+    
+    class Attraction {
+        init(master: City) {
+        var A_Name: String?
+        var A_mainPicture: String = ""
+        var A_quickDescription: String = ""
+        var A_whatYouNeedToKnow: String = ""
+        var A_whatToTake: String = ""
+        }
+    }
+    
 }
+

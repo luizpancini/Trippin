@@ -70,7 +70,7 @@ class CityViewController: UIViewController {
         lbl.numberOfLines = 0
         lbl.text = text
         lbl.sizeToFit()
-        return lbl.frame.size.height+5
+        return lbl.frame.size.height
     }
     
 }
